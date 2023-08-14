@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { increment, incrementByAmount } from "../reducers/reward";
+import { increment, incrementByAmount } from "../reducers/rewardReducer";
 
 export default function Reward() {
   const dispatch = useDispatch();
