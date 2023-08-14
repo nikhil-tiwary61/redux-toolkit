@@ -4,6 +4,7 @@ import {
   increment,
   decrement,
   incrementByAmount,
+  getUserAccount,
 } from "../slices/accountSlice";
 
 export default function Account() {
@@ -21,6 +22,9 @@ export default function Account() {
       <input type="text" onChange={(e) => setValue(+e.target.value)} />
       <button onClick={() => dispatch(incrementByAmount(value))}>
         Increment By {value}
+      </button>
+      <button onClick={() => dispatch(getUserAccount(1))}>
+        Get Account Info
       </button>
       <hr />
     </div>
